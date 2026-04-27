@@ -125,17 +125,7 @@ header .container-fluid {
     font-size: 0.6rem;
     padding: 6px 10px;
   }
-  .hero-title {
-    font-size: 60px;
-  }
 }
-
-@media (max-width: 576px) {
-  .hero-title {
-    font-size: 38px;
-  }
-}
-
 
 /* =====================================================
    GLOBAL — Footer (compartido por todas las páginas)
@@ -214,6 +204,13 @@ header .container-fluid {
   color: #fff;
   margin-bottom: 10px;
 }
+@media (max-width: 991.98px) {
+  .hero-title {
+    font-size: 70px;
+  }
+}
+
+
 
 .hero-title span {
   color: #00f5d4;
