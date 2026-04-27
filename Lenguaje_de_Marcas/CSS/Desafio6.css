@@ -58,6 +58,10 @@ header .container-fluid {
     height: auto;
     padding: 10px 0;
   }
+
+  .titulo{
+    font-size: 0.42rem;
+  }
 }
 
 .titulo {
@@ -120,6 +124,15 @@ header .container-fluid {
   .enlace-menu {
     font-size: 0.6rem;
     padding: 6px 10px;
+  }
+  .hero-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 38px;
   }
 }
 
@@ -195,7 +208,7 @@ header .container-fluid {
 }
 
 .hero-title {
-  font-family: 'Orbitron', monospace;
+  font-family: 'Orbitron';
   font-size: 100px;
   font-weight: 900;
   color: #fff;
