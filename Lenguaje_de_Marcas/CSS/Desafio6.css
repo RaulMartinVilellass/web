@@ -23,7 +23,7 @@ body {
 
 @media (max-width: 991.98px) {
   body {
-    padding-top: 116px;
+    padding-top: 70px;
   }
 }
 
@@ -56,7 +56,6 @@ header .container-fluid {
 @media (max-width: 991.98px) {
   header {
     height: auto;
-    padding: 10px 0;
   }
 
 }
