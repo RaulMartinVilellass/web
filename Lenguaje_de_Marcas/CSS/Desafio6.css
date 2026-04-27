@@ -59,9 +59,6 @@ header .container-fluid {
     padding: 10px 0;
   }
 
-  .titulo{
-    font-size: 0.42rem;
-  }
 }
 
 .titulo {
@@ -122,9 +119,60 @@ header .container-fluid {
 
 @media (max-width: 991.98px) {
   .enlace-menu {
-    font-size: 0.6rem;
+    font-size: 15px;
     padding: 6px 10px;
   }
+}
+
+.menu-responsive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    position: relative;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu-nav {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 991.98px) {
+    .menu-icon {
+        display: block;
+    }
+    .titulo{
+        align-items: center;
+        text-align: center;
+        width: 96%;
+    }
+
+    .menu-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 5px;
+        text-align: center;
+        padding: 10px 0;
+        opacity: 0.6;
+
+            }
+      #menu-toggle:checked + .menu-icon + .menu-nav {
+        display: flex;
+    }
 }
 
 /* =====================================================
@@ -569,6 +617,14 @@ header .container-fluid {
 #sanchez:checked ~ .ficha-sanchez,
 #grupo:checked ~ .ficha-grupo {
   display: block;
+}
+
+@media (max-width: 991.98px) {
+  .botones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
 }
  
  
